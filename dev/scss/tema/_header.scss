@@ -1,0 +1,32 @@
+.header{
+  position: relative;
+  padding-bottom: 1em;
+  background: img('bg1.jpg');
+  &__fondo{
+    background: img('bg-3.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    @include desde(web){
+      background-size: 100%;
+    }
+  }
+  .logo{
+    margin-top: 2em;
+  }
+}
+.slogan-container{
+  margin-top: 0;
+}
+.slogan{
+  font-family: $passion;
+  font-size: 2em;
+  text-align: center;
+  color: $blanco;
+  line-height: 1;
+  @include desde(web){
+    font-size: 3em;
+  }
+  span{
+    color: $darken-rojo;
+  }
+}
